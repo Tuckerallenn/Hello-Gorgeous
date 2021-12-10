@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>My New Pen!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/index.processed.css">
+    <style>
+        img {
+            border: 5px solid #555;
+            -- IMG BORDER --
+        }
+    </style>
+</head>
+<script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="scents.html">Scents</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="apparel.html">Apparel</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+
+    <body style="background-color:pink;">
+        <center><br><br><br>
+            <img src=https://i.postimg.cc/wTRcTksG/Screenshot-20211111-141654-Instagram.jpg width=4 0% height=4 0%><br><br>
+            <img src=https://i.postimg.cc/7LH271fD/Screenshot-20211111-142513-Instagram.jpg width=4 0% height=4 0%><br><br>
+            <img src=https://i.postimg.cc/hG270Jdm/Screenshot-20211111-142623-Instagram.jpg width=4 0% height=4 0%><br><br>
+            <img src=https://i.postimg.cc/1R2jyBz8/Screenshot-20211111-142632-Instagram.jpg width=4 0% height=4 0%><br><br>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button><br><br>
+
+
+
+    </body>
+    <!-- hello g image -->
+
+</html>

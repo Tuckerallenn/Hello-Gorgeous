@@ -1,0 +1,52 @@
+nav {
+    height: 20vh;
+    width: 40vw;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    bordercolor: 0 0 2px pink;
+    border: 2px solid pink;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 6px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background: pink;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+button {
+    bordercolor: 0 0 2px pink;
+    background: black;
+    box-shadow: 0 0 15px black;
+    font-size: 18px;
+    color: pink;
+    display: flex;
+    bordercolor: 0 0 2px pink;
+}
